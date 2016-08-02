@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sola_window_background_color"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightgray"
+                android:fontFamily="Thin"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="请选择设备配置模式"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup_smartlink_type_selection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sola_margin_left"
+                android:layout_marginRight="@dimen/sola_margin_right"
+                android:layout_marginTop="15dp"
+                android:contentDescription="本地IP"
+                
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_smartlink"
+                    style="@style/sola_left_tab"
+                    android:checked="true"
+                    android:text="智能模式" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radio_aplink"
+                    style="@style/sola_right_tab"
+                    android:text="AP模式" >
+                </RadioButton>
+            </RadioGroup>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="44.10dp"
+                android:layout_marginRight="44.10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sola_switch"
+                android:contentDescription="module" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="请长按设备上的按纽直至红色LED闪烁，再点击下面的“开始搜索”按钮。"
+                android:textColor="@color/sola_bar_code_result_name_color"
+                android:textSize="@dimen/sola_small2_font_size" />
+            <!-- line -->
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_wifi_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/sola_margin_left"
+                    android:layout_marginRight="@dimen/sola_margin_right"
+                    android:background="@color/sola_line_color" />
+
+                <TextView
+                    android:id="@+id/textview_wifi_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/sola_window_background_color"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp"
+                    android:text="选择WiFi网络"
+                    android:textColor="@color/sola_text_color_inverse"
+                    android:textSize="@dimen/sola_middle_font_size" />
+            </RelativeLayout>
+
+            <!-- search status -->
+            
+            <LinearLayout
+                android:id="@+id/relativeLayout_search_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                
+            <ImageView android:id="@+id/imageview_search_status"
+                android:layout_width="@dimen/sola_type_select_search_status_icon_width"
+                android:layout_height="@dimen/sola_type_select_search_status_icon_height"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="center"
+                android:visibility="visible"
+                android:background="@drawable/sola_loading_icon"
+                android:contentDescription="search status image" />
+             <TextView
+                    android:id="@+id/textview_search_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="29.40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/sola_textview_search_tip"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:textSize="@dimen/sola_small_font_size" />
+                
+            </LinearLayout>
+            
+            
+			<!--wifi -->
+            <RelativeLayout
+                android:id="@+id/relativeLayout_wifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.34dp"
+                android:background="@color/white" >
+
+                <!-- wifi name -->
+                <TextView
+                    android:id="@+id/textview_config_wifi_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/sola_margin_left"
+                    android:layout_marginTop="14.70dp"
+                    android:text="WiFi选择"
+                    android:fontFamily="thin"
+                    android:textColor="@color/sola_bar_code_result_name_color"
+                    android:textSize="@dimen/sola_middle_font_size" />
+
+                <EditText
+                    android:id="@+id/edittext_wifi_name"
+                    android:layout_width="256.93dp"
+                    android:layout_height="36.75dp"
+                    android:layout_below="@id/textview_config_wifi_name"
+                    android:layout_marginLeft="@dimen/sola_margin_left"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="WIFI名称"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textSize="@dimen/sola_small_font_size" />
+
+                <ImageView
+                    android:id="@+id/imageview_wifi_waiting_status"
+                    android:layout_width="30.72dp"
+                    android:layout_height="30.72dp"
+                    android:layout_below="@id/textview_config_wifi_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/edittext_wifi_name"
+                    android:visibility="invisible"
+                    android:background="@drawable/sola_wifi_waiting_status_icon" />
+
+                <!-- wifi password -->
+
+                <TextView
+                    android:id="@+id/textview_wifi_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edittext_wifi_name"
+                    android:layout_marginLeft="@dimen/sola_margin_left"
+                    android:layout_marginTop="14.70dp"
+                    android:text="WiFi密码"
+                    android:textColor="@color/sola_bar_code_result_name_color"
+                    android:textSize="@dimen/sola_middle_font_size" />
+
+                <EditText
+                    android:id="@+id/edittext_wifi_pass"
+                    android:layout_width="256.93dp"
+                    android:layout_height="36.75dp"
+                    android:layout_below="@id/textview_wifi_pass"
+                    android:layout_marginLeft="@dimen/sola_margin_left"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="请输入密码..."
+                    android:inputType="textPassword"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textSize="@dimen/sola_small_font_size" />
+
+                <ToggleButton
+                    android:id="@+id/checkbox_show_pass"
+                    android:layout_width="30.72dp"
+                    android:layout_height="20.38dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/textview_wifi_pass"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_toRightOf="@id/edittext_wifi_pass"
+                    android:background="@drawable/sola_togglebutton_selector"
+                    
+
+                    android:checked="false"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_below="@id/edittext_wifi_pass"
+                    android:text=""
+                    android:background="@drawable/shadow"
+                     />
+                
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom ="8.82dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_start_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sola_button_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/sola_margin_left"
+                    android:layout_marginRight="@dimen/sola_margin_right"
+                    android:textColor="@color/sola_text_color"
+		            android:textSize="@dimen/sola_small_font_size"
+		            android:background="@drawable/sola_button_bg_selector"
+                    android:text="@string/sola_btn_start_search_text" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">爱播一百</string>
+    <string name="action_settings">设置</string>
+	<string name="hiflying_smartlinker_ssid">SSID:</string>
+    <string name="hiflying_smartlinker_password">Password:</string>
+    <string name="hiflying_smartlinker_start">查找</string>
+    <string name="hiflying_smartlinker_waiting">Waiting&#8230;</string>
+    <string name="hiflying_smartlinker_timeout">搜索超时!</string>
+    <string name="hiflying_smartlinker_completed">SmartLink completed</string>
+    <string name="hiflying_smartlinker_new_module_found" formatted="false">New smart linked module: Mac-%s Ip-%s</string>
+    <string name="hiflying_smartlinker_no_wifi_connectivity">没有 Wifi连接</string>
+    <string name="sola_textview_search_tip">请点击下面“开始搜索”按钮</string>
+    <string name="sola_btn_start_search_text">开始搜索</string>
+    <string name="sola_config_wifi_list_section_title">可用WLAN列表</string>
+    <string name="sola_smartlink_search_tip">正在连接，请稍后...</string>
+
+</resources>

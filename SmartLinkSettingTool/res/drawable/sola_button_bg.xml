@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+	<corners android:radius="2dp"/>
+	
+    <stroke
+        android:width="0dp"    
+        android:color="@color/sola_bar_code_tip_background_color" />
+    <solid android:color="@color/sola_button_background_color" ></solid> 
+</shape>

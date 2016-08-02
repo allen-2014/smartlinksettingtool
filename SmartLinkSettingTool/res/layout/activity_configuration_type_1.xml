@@ -1,0 +1,298 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:padding="20dp" >
+    
+   <ScrollView android:layout_width="match_parent"
+		    android:layout_height="wrap_content"> 
+<LinearLayout
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" >
+    <TextView android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        android:text="1.请先点击扫一扫，扫描设备上的二维码；" />
+    
+        <LinearLayout
+        android:layout_width="wrap_content"
+	    android:layout_height="60dp"
+	    android:orientation="horizontal" >
+	    <LinearLayout
+	        android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical" >
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+	        <TextView android:layout_width="wrap_content"
+    				  android:layout_height="wrap_content"
+	             	  
+	            	  android:text="MAC号:" />
+	
+	        <TextView android:layout_width="wrap_content"
+    				  android:layout_height="wrap_content"
+	           		  
+	            	  android:text="FF-FF-FF-FF-FF-FF" />
+	    </LinearLayout>
+	    </LinearLayout>
+		<Button android:layout_width="60dp"
+		    android:layout_height="60dp"
+		    android:layout_marginLeft="30dp"
+		    
+			android:text="扫一扫" />
+		 
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	
+        android:text="2.请长按设备上的按钮直至红色LED闪烁，再点击右侧的“查找”按钮" />
+       <LinearLayout
+        android:layout_width="wrap_content"
+	    android:layout_height="100dp"
+	    android:orientation="horizontal" >
+	    <LinearLayout
+	        android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical" >
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+	        
+	        <TextView 
+	            android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+					
+	                android:text="SSID:" />
+	        <EditText android:id="@+id/ssid_editText"
+	                  android:layout_width="180dp"
+    				  android:layout_height="wrap_content"
+	                  android:text="" 
+	            	  />
+	        
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+	        <TextView android:layout_width="wrap_content"
+    				  android:layout_height="wrap_content"
+	            	  android:text="密码:" />
+	
+	        <EditText android:id="@+id/ssid_pass_editText"
+	            	  android:layout_width="180dp"
+    				  android:layout_height="wrap_content"
+	            	  android:text="" />
+	    </LinearLayout>
+	    </LinearLayout>
+		<Button android:id="@+id/search_ip_button "
+		    android:layout_width="60dp"
+		    android:layout_height="60dp"
+		    android:layout_marginTop="15dp"
+			android:text="查 找" />
+		 
+    </LinearLayout>
+    
+	
+     <!--配置  -->  
+     
+     <TextView android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        android:text="3.设置好配置信息，请点击“提交”" />  
+      
+     <LinearLayout
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+		<TextView android:layout_width="wrap_content"
+    				  android:layout_height="wrap_content"
+	            	  android:text="wifi名称:" />
+		
+		<EditText  android:id="@+id/wifiName_setting_editText"
+		    android:layout_width="180dp"
+    				  android:layout_height="wrap_content"
+	            	  android:text="" />
+     </LinearLayout>
+     
+     <LinearLayout android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="horizontal" >
+	     		<TextView android:layout_width="wrap_content"
+	    				  android:layout_height="wrap_content"
+		            	  android:text="加密方式:" />
+	     	    <Spinner android:id="@+id/wifi_encrypt_types_spinner" 
+	     	        android:layout_width="180dp"
+	     	             android:layout_height="wrap_content" />
+		
+<!-- 				<ListView android:id="@+id/wifi_encrypt_types_listView"  -->
+<!-- 				    	  android:layout_width="180dp" -->
+<!-- 		    			  android:layout_height="wrap_content" -->
+<!-- 			            	   /> -->
+     </LinearLayout>
+     <LinearLayout
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+		
+		<TextView android:layout_width="wrap_content"
+    				  android:layout_height="wrap_content"
+	            	  android:text="wifi密码:" />
+		
+		<EditText  android:id="@+id/wifiPwd_setting_editText"
+		    android:layout_width="180dp"
+    				  android:layout_height="wrap_content"
+	            	  android:text="" />
+
+	</LinearLayout>
+     <LinearLayout
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+		
+		<TextView android:layout_width="wrap_content"
+    				  android:layout_height="wrap_content"
+	            	  android:text="远端IP:" />
+		
+		<EditText  android:id="@+id/farIP_setting_editText"
+		    android:layout_width="150dp"
+    				  android:layout_height="wrap_content"
+	            	  android:text="" />
+        
+         
+	</LinearLayout>
+	 <LinearLayout
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+	<TextView android:layout_width="wrap_content"
+    				  android:layout_height="wrap_content"
+	            	  android:text="端口:" />
+		
+		<EditText android:id="@+id/farPort_setting_editText"
+		    android:layout_width="100dp"
+    				  android:layout_height="wrap_content"
+	            	  android:text="" />
+		</LinearLayout>
+     <LinearLayout
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+		
+		<TextView android:layout_width="wrap_content"
+    				  android:layout_height="wrap_content"
+	            	  android:text="本地IP:" />
+		
+		<RadioGroup android:id="@+id/radioGroup_setting" 
+		    		android:contentDescription="本地IP" 
+		    		android:layout_width="wrap_content" 
+		    		android:layout_height="wrap_content"
+		    		>
+			
+			<RadioButton android:id="@+id/dhcp_setting_radioButton"  
+			    		 android:layout_width="wrap_content" 
+			    		 android:layout_height="wrap_content"  
+			    		 android:text="DHCP" android:checked="true">
+			    
+			</RadioButton>
+			<RadioButton android:id="@+id/static_setting_radioButton" 
+			    		 android:layout_width="wrap_content" 
+			    		 android:layout_height="wrap_content"
+			    		 android:layout_marginTop="-32dp"
+			    		 android:layout_marginLeft="80dp"
+			    		 android:text="STATIC">
+			
+			</RadioButton>    
+		</RadioGroup>
+		
+		
+		
+	</LinearLayout>
+     <LinearLayout
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+			<TextView android:layout_width="wrap_content"
+    				  android:layout_height="wrap_content"
+	            	  android:text="本地IP:" />	
+         
+         <EditText android:id="@+id/nearIP_setting_editText" 
+             		android:layout_width="150dp"
+    				  android:layout_height="wrap_content"
+	            	  android:text="" />
+		</LinearLayout>
+		<LinearLayout
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+			<TextView android:layout_width="wrap_content"
+    				  android:layout_height="wrap_content"
+	            	  android:text="子网掩码:" />	
+         
+         <EditText android:id="@+id/subMask_setting_editText" 
+             android:layout_width="150dp"
+    				  android:layout_height="wrap_content"
+	            	  android:text="" />
+		</LinearLayout>
+		
+		<LinearLayout
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+         <LinearLayout
+	        android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical" >
+		<LinearLayout
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+			<TextView android:layout_width="wrap_content"
+    				  android:layout_height="wrap_content"
+	            	  android:text="网关:" />	
+         
+         <EditText android:id="@+id/gateway_setting_editText"  
+             android:layout_width="150dp"
+    				  android:layout_height="wrap_content"
+	            	  android:text="" />
+		</LinearLayout>
+		
+		<LinearLayout
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+			<TextView android:layout_width="wrap_content"
+    				  android:layout_height="wrap_content"
+	            	  android:text="DNS:" />	
+         
+         <EditText android:id="@+id/dns_setting_editText"
+             android:layout_width="150dp"
+    				  android:layout_height="wrap_content"
+	            	  android:text="" />
+		</LinearLayout>
+		</LinearLayout>
+		<Button android:id="@+id/submit_setting_button "
+		    android:layout_width="60dp"
+		    android:layout_height="60dp"
+		    android:layout_marginTop="15dp"
+			android:text="提交" />
+		
+		</LinearLayout>
+		
+		<Button android:id="@+id/connect_setting_button "
+		    android:layout_width="60dp"
+		    android:layout_height="60dp"
+		    android:layout_marginTop="15dp"
+			android:text="测试_连接" />
+		
+		</LinearLayout>
+</ScrollView>
+			
+</LinearLayout>
+
+

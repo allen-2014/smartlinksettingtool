@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--     <style name="Theme.Styled" parent="Theme.Sherlock.Light.DarkActionBar"> -->
+<!--         <item name="actionBarStyle">@style/Widget.Styled.DeepBlueActionBar</item> -->
+<!--         <item name="android:actionBarStyle">@style/Widget.Styled.DeepBlueActionBar</item> -->
+
+<!--     </style> -->
+
+<!--     <style name="Widget.Styled.ActionBar" parent="Widget.Sherlock.Light.ActionBar.Solid.Inverse"> -->
+<!--         <item name="background">@drawable/bg_striped</item> -->
+<!--         <item name="android:background">@drawable/bg_striped</item> -->
+<!--         <item name="backgroundSplit">@drawable/bg_striped_split</item> -->
+<!--         <item name="android:backgroundSplit">@drawable/bg_striped_split</item> -->
+<!--     </style> -->
+
+<!--     <style name="Widget.Styled.DeepBlueActionBar" parent="Widget.Sherlock.Light.ActionBar.Solid.Inverse"> -->
+<!--         <item name="background">#466682</item> -->
+<!--         <item name="android:background">#466682</item> -->
+        
+<!--         <item name="logo">@android:color/transparent</item> -->
+<!--         <item name="android:logo">@android:color/transparent</item> -->
+<!--         <item name="android:windowBackground">@color/red</item> -->
+        
+<!--     </style> -->
+    
+
+</resources>

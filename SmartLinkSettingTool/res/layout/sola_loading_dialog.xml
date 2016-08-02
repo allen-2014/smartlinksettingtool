@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearlayout_loading_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center"  
+    android:padding="10dp"  
+    android:orientation="vertical" >
+    
+    	<com.sola.uicomponent.ProgressWheel
+		        android:id="@+id/progresswheel_smartlink_search"
+		        android:layout_width="170dp"
+		        android:layout_height="170dp"
+		        ProgressWheel:pwTextColor="@color/sola_text_color"
+		        ProgressWheel:pwTextSize="@dimen/sola_large_font_size"
+		        ProgressWheel:pwRimColor="#44000000"
+		        ProgressWheel:pwBarLength="60dp"
+		        ProgressWheel:pwBarColor="#FF14A231"
+		        ProgressWheel:pwBarWidth="5dp"
+		        ProgressWheel:pwRimWidth="5dp" 
+		        ProgressWheel:pwSpinSpeed="10dp"/>
+    	
+      <TextView
+        android:id="@+id/textview_smartlink_search_tip"  
+        android:layout_width="wrap_content"   
+        android:layout_height="wrap_content"  
+        android:textSize="@dimen/sola_small_font_size"
+        android:textColor="@color/white"
+        android:text="@string/sola_smartlink_search_tip" />
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="orange"     type="color">#FF9912</color>
+	<color name="red"        type="color">#FF0000</color>
+	<color name="blue"       type="color">#FF33B5E5</color>
+	<color name="purple"     type="color">#FFAA66CC</color>
+	<color name="green"      type="color">#FF99CC00</color>
+	<color name="darkblue"   type="color">#FF0099CC</color>
+	<color name="darkpurple" type="color">#FF9933CC</color>
+	<color name="darkgreen"  type="color">#FF669900</color>
+	<color name="darkorange" type="color">#FFFF8800</color>
+	<color name="darkred"    type="color">#FFCC0000</color>
+	<color name="white"    type="color">#FFFFFFFF</color>
+	<color name="lightgray" type="color">#F2F2F2</color>
+	<color name="gray" type="color">#9A9A9A</color>
+	<color name="sola_bar_code_tip_background_color" type="color">#2F2C2B26</color>
+	<color name="sola_text_color_inverse" type="color">#FFFF3D00</color>
+	<color name="sola_text_color" type="color">#FFFFFFFF</color>
+	<color name="sola_popupmenu_background_color" type="color">#FF616469</color>
+
+	<color name="sola_list_popup_window_bg_color" type="color">#FF616469</color>
+	<color name="sola_list_popup_window_item_pressed_color">#FF596068</color>
+	<color name="sola_primary_dark_color" type="color">#FFFF3D00</color>
+	<color name="sola_primary_color" type="color">#FFFF3D00</color>
+	<color name="sola_primary_color_inverse" type="color">#FFF9F9F9</color>
+	<color name="sola_window_background_color" type="color">#FFF5F5F5</color>
+	<color name="sola_bar_code_result_text_color" type="color">#FF14A232</color>
+	<color name="sola_bar_code_result_name_color" type="color">#FF9B9B9B</color>
+	<color name="sola_bar_code_result_info_color" type="color">#FF5F5F5F</color>
+	
+	<color name="sola_line_color" type="color">#FFD2D1D5</color>
+	<color name="sola_line_light_color" type="color">#FFEBEBEB</color>
+	<color name="sola_textedit_edge_color" type="color">#FFD2D1D5</color>
+	<color name="sola_button_background_color" type="color">#FFFF3D00</color>
+	<color name="sola_button_disabled_background_color" type="color">#FFB4B4B4</color>
+	
+	<color name="sola_section_title_color" type="color">#FF000000</color>
+	<color name="sola_section_title_color_inverse" type="color">#FF999999</color>
+	
+</resources>

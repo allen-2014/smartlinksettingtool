@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sola_window_background_color"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sola_section_title_height"
+                android:layout_marginLeft="@dimen/sola_margin_left"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:text="服务器地址"
+                android:textColor="@color/sola_section_title_color"
+                android:textSize="@dimen/sola_small_font_size" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sola_layout_bg" >
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_far_ip"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sola_textedit_height"
+                    android:layout_marginLeft="@dimen/sola_info_margin_left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".30"
+                        android:text="服务器地址"
+                        android:textSize="@dimen/sola_small_font_size" />
+
+                    <EditText
+                        android:id="@+id/editText_farIP_setting"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight=".650"
+                        android:background="@drawable/sola_edittext_none_edge_bg"
+                        android:digits="0123456789."
+                        android:hint="请输入ip地址"
+                        android:inputType="number|numberDecimal"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textSize="@dimen/sola_small_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textview_config_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/linearlayout_far_ip"
+                    android:background="@color/sola_line_light_color"
+                    android:text="" />
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_far_port"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sola_textedit_height"
+                    android:layout_below="@id/textview_config_line"
+                    android:layout_marginLeft="@dimen/sola_info_margin_left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".30"
+                        android:text="服务器端口"
+                        android:textSize="@dimen/sola_small_font_size" />
+
+                    <EditText
+                        android:id="@+id/editText_farPort_setting"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight=".650"
+                        android:background="@drawable/sola_edittext_none_edge_bg"
+                        android:digits="0123456789."
+                        android:hint="请输入端口"
+                        android:inputType="number|numberDecimal"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textSize="@dimen/sola_small_font_size" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sola_section_title_height"
+                android:layout_marginLeft="@dimen/sola_margin_left"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:text="设备信息"
+                android:textColor="@color/sola_section_title_color"
+                android:textSize="@dimen/sola_small_font_size" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sola_layout_bg" >
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_wifi_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sola_textedit_height"
+                    android:layout_marginLeft="@dimen/sola_info_margin_left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".25"
+                        android:text="WiFi选择"
+                        android:focusable="false"
+                        android:textSize="@dimen/sola_small_font_size" />
+
+                    <TextView
+                        android:id="@+id/textview_config_wifi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".55"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="TP-Link"
+                        android:focusable="false"
+                        android:textSize="@dimen/sola_small_font_size" />
+
+                    <ImageView
+                        android:id="@+id/imageview_config_wifi_navigation"
+                        android:layout_width="@dimen/sola_navigation_icon_width"
+                        android:layout_height="@dimen/sola_navigation_icon_height"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="12dp"
+                        android:focusable="false"
+                        android:background="@drawable/sola_info_navigation_right_icon" />
+                    <!-- <Spinner -->
+                    <!-- android:id="@+id/spinner_configuration_wifi_selection" -->
+                    <!-- android:layout_width="0dp" -->
+                    <!-- android:layout_height="40dp" -->
+                    <!-- android:layout_marginRight="80dp" -->
+                    <!-- android:layout_weight=".650" -->
+                    <!-- android:background="@drawable/spinner_bg" -->
+                    <!-- android:spinnerMode="dropdown" /> -->
+                </LinearLayout>
+                
+				<TextView
+                    android:id="@+id/textview_config_line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/linearlayout_wifi_select"
+                    android:background="@color/sola_line_light_color"
+                    android:text="" />
+				
+                <LinearLayout
+                    android:id="@+id/linearlayout_encrypttype_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sola_textedit_height"
+                    android:layout_below="@id/textview_config_line2"
+                    android:layout_marginLeft="@dimen/sola_info_margin_left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".25"
+                        android:text="加密方式"
+                        android:focusable="false"
+                        android:textSize="@dimen/sola_small_font_size" />
+
+                    <TextView
+                        android:id="@+id/textview_config_encrypttype"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".55"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="NONE"
+                        android:focusable="false"
+                        android:textSize="@dimen/sola_small_font_size" />
+
+                    <ImageView
+                        android:id="@+id/imageview_config_encrypttype_navigation"
+                        android:layout_width="@dimen/sola_navigation_icon_width"
+                        android:layout_height="@dimen/sola_navigation_icon_height"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="12dp"
+                        android:focusable="false"
+                        android:visibility="invisible"
+                        android:background="@drawable/sola_info_navigation_right_icon" />
+                    <!-- <Spinner -->
+                    <!-- android:id="@+id/spinner_configuration_wifi_encrypt_types" -->
+                    <!-- android:layout_width="0dp" -->
+                    <!-- android:layout_height="40dp" -->
+                    <!-- android:layout_marginRight="80dp" -->
+                    <!-- android:layout_weight=".650" -->
+                    <!-- android:background="@drawable/spinner_bg" -->
+                    <!-- android:spinnerMode="dropdown" /> -->
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textview_config_line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/linearlayout_encrypttype_select"
+                    android:background="@color/sola_line_light_color"
+                    android:text="" />
+                
+                <LinearLayout
+                    android:id="@+id/linearlayout_wifi_pswd"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sola_textedit_height"
+                    android:layout_below="@id/textview_config_line3"
+                    android:layout_marginLeft="@dimen/sola_info_margin_left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".25"
+                        android:text="WiFi密码"
+                        android:textSize="@dimen/sola_small_font_size" />
+
+                    <EditText
+                        android:id="@+id/editText_wifiPwd_setting"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".75"
+                        android:background="@drawable/sola_edittext_none_edge_bg"
+                        android:gravity="center_horizontal"
+                        android:hint="请输入wifi密码"
+                        android:inputType="textPassword"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textSize="@dimen/sola_small_font_size" />
+
+                    <!-- <CheckBox -->
+                    <!-- android:id="@+id/checkbox_setting_show_pass" -->
+                    <!-- android:layout_width="0dp" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:layout_marginRight="20dp" -->
+                    <!-- android:layout_weight=".25" -->
+                    <!-- android:text="显示密码" -->
+                    <!-- android:textSize="10sp" /> -->
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textview_config_line4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/linearlayout_wifi_pswd"
+                    android:background="@color/sola_line_light_color"
+                    android:text="" />
+                
+                <LinearLayout
+                    android:id="@+id/linearlayout_ip_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sola_textedit_height"
+                    android:layout_below="@id/textview_config_line4"
+                    android:layout_marginLeft="@dimen/sola_info_margin_left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".25"
+                        android:textSize="@dimen/sola_small_font_size"
+                        android:focusable="false"
+                        android:text="IP地址:" />
+
+                    <TextView
+                        android:id="@+id/textview_config_module_ip"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".55"
+                        android:gravity="center_horizontal"
+                        android:focusable="false"
+                        android:padding="5dp"
+                        android:text="NONE"
+                        android:textSize="@dimen/sola_small_font_size" />
+
+                    <ImageView
+                        android:id="@+id/imageview_config_m_navigation"
+                        android:layout_width="@dimen/sola_navigation_icon_width"
+                        android:layout_height="@dimen/sola_navigation_icon_height"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="12dp"
+                        android:focusable="false"
+                        android:background="@drawable/sola_info_navigation_right_icon" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sola_button_height"
+                    android:layout_marginLeft="@dimen/sola_margin_left"
+                    android:layout_marginRight="@dimen/sola_margin_right"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textSize="@dimen/sola_small_font_size"
+                    android:textColor="@color/sola_text_color"
+                    android:background="@drawable/sola_button_bg"
+                    android:text="写入 " />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

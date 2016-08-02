@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp" >
+    
+    <android.support.v7.widget.Toolbar
+           android:id="@+id/my_toolbar"
+           xmlns:app="http://schemas.android.com/apk/res-auto" 
+           android:layout_width="match_parent"
+		   android:layout_height="@dimen/sola_toolbar_height"
+		   android:background="@color/sola_primary_color"
+		   android:minHeight="@dimen/sola_toolbar_height"
+		   android:gravity="start"
+		   app:contentInsetEnd="0dp"
+			app:contentInsetLeft="0dp"
+			app:contentInsetRight="0dp"
+			app:contentInsetStart="0dp"
+			app:paddingEnd="0dp"
+			app:paddingStart="0dp"
+			app:titleMarginStart="0dp"
+			
+		   app:navigationIcon="@drawable/sola_navigation_icon_inverse_19"
+		   app:popupTheme="@style/MyApp.PopupMenu" >
+<!-- 		   android:theme="@style/AppTheme.Actionbar" -->
+        
+        
+    <TextView
+       		style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="0dp"
+            android:gravity="center"
+            
+            android:text=""
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/sola_middle_font_size"
+            android:layout_centerInParent="true"
+            
+            />
+    
+    <ImageView
+        	
+            style="@style/SolaActionButtonOverflow"
+            android:id="@+id/toolbar_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            />
+    
+    
+    </android.support.v7.widget.Toolbar>
+        <ImageView
+            android:id="@+id/capture_barcode_tip_left"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/my_toolbar"
+            android:background="@drawable/shadow" />
+    
+</RelativeLayout>

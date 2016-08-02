@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- layout background -->
+    <item>
+
+        <!-- show rectangle area -->
+        <shape>
+            <corners android:radius="10dp" />
+            <gradient
+                android:angle="270"
+                android:centerColor="#FF000000"
+                android:endColor="@color/sola_list_popup_window_bg_color"
+                android:startColor="@color/sola_list_popup_window_bg_color" />
+        </shape>
+    </item>
+    <!-- layout foreground -->
+    <!-- padding -->
+    <item
+        android:bottom="5px"
+        android:top="5px">
+        <!-- show rectangle area -->
+        <shape>
+            <corners android:radius="10dp" />
+            <solid android:color="@color/sola_list_popup_window_bg_color" />
+        </shape>
+    </item>
+
+</layer-list>

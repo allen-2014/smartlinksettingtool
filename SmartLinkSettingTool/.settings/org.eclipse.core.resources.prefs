@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//src/com/sola/smartlinksettingtool/Configuration1Activity.java=UTF-8
+encoding//src/com/sola/smartlinksettingtool/MainActivity.java=UTF-8
+encoding//src/com/sola/smartlinksettingtool/SmartLinkTypeSelectionFragment.java=UTF-8
+encoding//src/com/sola/smartlinksettingtool/camera/CameraConfigurationManager.java=UTF-8
+encoding//src/com/sola/smartlinksettingtool/camera/CameraManager.java=UTF-8
+encoding//src/com/sola/smartlinksettingtool/decode/DecodeFormatManager.java=UTF-8
+encoding//src/com/sola/smartlinksettingtool/decode/DecodeHandler.java=UTF-8
+encoding//src/com/sola/smartlinksettingtool/encoding/EncodingUtils.java=UTF-8

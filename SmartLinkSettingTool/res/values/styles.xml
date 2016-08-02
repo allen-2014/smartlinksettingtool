@@ -1,0 +1,190 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="myTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="listPopupWindowStyle">@style/sola.ListPopupWindowStyle</item>
+        <item name="dropDownListViewStyle">@style/sola.DropDownListViewStyle</item>
+        <item name="android:listPopupWindowStyle">@style/sola.ListPopupWindowStyle</item>
+        <item name="android:dropDownListViewStyle">@style/sola.DropDownListViewStyle</item>
+        
+        <!-- OverflowMenuStyle -->
+        <!-- <item name="actionOverflowMenuStyle">@style/OverflowMenu</item> -->
+
+        <!-- <item name="actionOverflowButtonStyle">@style/SolaActionButtonOverflow</item> -->
+        
+        <!-- popup menu item background,maybe use the popup menu style in "sola_action_bar.xml" -->
+		<!--   <item name="android:itemBackground">@drawable/sola_button_bg</item> -->
+
+        <!--  <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>-->
+        <!-- color of item on toolbar -->
+		<!-- <item name="android:actionBarItemBackground">@drawable/sola_popupmenu_bg_selector</item> -->
+        
+        <!--To change the text styling of options menu items</item>-->
+        <item name="android:itemTextAppearance">@style/MyActionBar.MenuTextStyle</item>
+        
+        <item name="colorPrimaryDark">@color/sola_primary_dark_color</item>
+        <item name="android:actionBarSize">@dimen/sola_toolbar_height</item>
+        
+    </style>
+    
+    <!-- ToolBar -->
+    <style name="myToolBarStyle" parent="Theme.AppCompat">
+        <item name="android:actionBarSize">@dimen/sola_toolbar_height</item>
+    </style>
+
+    
+    <!-- Change Overflow Menu ListView Divider Property -->
+    <style name="PopupMenuListView" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <!-- divier can user png etc. -->
+        <item name="android:divider">@drawable/sola_item_divider</item>
+        <!-- can use  color -->
+	<!--   <item name="android:divider">@color/sola_text_color</item> -->
+	<!--   <item name="android:dividerHeight">1dp</item> -->
+    </style>
+    
+    <!-- background color for Action Bar overflow menu -->
+    <style name="MyApp.PopupMenu" parent="android:Widget.Holo.Light.ListPopupWindow">
+        
+        <item name="android:colorBackground">#FF596068</item> <!-- @android:color/transparent -->
+        
+        <!-- set background for ListPopupWindow -->
+		<!-- <item name="android:background">@drawable/sola_button_bg</item> -->
+        
+        <!-- can plus the width but not minus the width a lot, so not used for now -->
+		<item name="android:width">100dp</item>
+		<item name="android:dropDownWidth">100dp</item>
+        
+        <!-- no effective using drawable  -->
+		<!--  <item name="android:popupBackground">@drawable/sola_button_bg</item> -->
+    </style>
+
+   
+    
+    <style name="OverflowMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+
+        <!-- Required for pre-Lollipop. -->
+        <!-- Not overlap with toolbar -->
+        <item name="overlapAnchor">false</item>
+<!--         <item name="android:dropDownVerticalOffset">30dip</item> -->
+        <!-- Required for Lollipop. -->
+        <!-- <item name="android:overlapAnchor">false</item> -->
+        <!-- <item name="android:dropDownVerticalOffset">4.0dip</item> -->
+		
+		<!-- Change Overflow Menu Background -->
+<!-- 		<item name="android:popupBackground">#888888</item> -->
+		
+    </style>
+
+    
+    <style name="SolaActionButtonOverflow" parent="android:style/Widget.Holo.ActionButton.Overflow">
+	<item name="android:src">@drawable/sola_toolbar_plus_icon_32</item>
+
+        
+    </style>
+    
+    
+    <style name="MyActionBar.MenuTextStyle"
+        parent="style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+<!--         <item name="android:textStyle">bold</item> -->
+        <item name="android:textSize">17sp</item>
+    </style>
+    
+   
+    
+    <!-- for sola_action_bar.xml popup menu item text color & text size. not used for now-->
+    <style name="AppTheme.Actionbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColor">@color/sola_text_color</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+
+    <style name="sola_left_tab">
+        <item name="android:layout_height">@dimen/sola_radiobutton_height</item>
+        <item name="android:layout_width">@dimen/sola_radiobutton_width</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/sola_small_font_size</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:background">@drawable/sola_leftradio_bg_selector</item>
+        <item name="android:textColor">@drawable/sola_radio_textcolor_selector</item>
+        <item name="android:button">@null</item>
+    </style>
+    
+    <style name="sola_right_tab">
+        <item name="android:layout_height">@dimen/sola_radiobutton_height</item>
+        <item name="android:layout_width">@dimen/sola_radiobutton_width</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/sola_small_font_size</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:background">@drawable/sola_rightradio_bg_selector</item>
+        <item name="android:textColor">@drawable/sola_radio_textcolor_selector</item>
+        <item name="android:button">@null</item>
+    </style>
+    
+    <style name="sola_wifi_list_section">
+        <item name="android:layout_height">@dimen/sola_section_title_height</item>
+        <item name="android:background">@color/sola_window_background_color</item>
+    </style>
+    
+    
+    <style name="sola_loading_dialog" parent="android:style/Theme.Dialog">  
+        <item name="android:windowFrame">@null</item>  
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item> 
+        <item name="android:windowIsFloating">true</item>  
+        <item name="android:windowContentOverlay">@null</item>  
+    </style>
+    
+    
+    <!-- for list popup window -->
+    <item name="pop_menu_item_prefix" type="id" />
+    <item name="pop_menu_item_content" type="id" />
+    <item name="pop_menu_item_suffix" type="id" />
+    <item name="pop_menu_item_layout" type="layout" />
+    
+    
+    <style name="sola.ListPopupWindow" parent="myTheme">
+        <item name="android:listPopupWindowStyle">@style/sola.ListPopupWindowStyle</item>
+        <item name="android:dropDownListViewStyle">@style/sola.DropDownListViewStyle</item>
+    </style>
+    
+    <!-- list popup window style -->
+    <style name="sola.ListPopupWindowStyle" parent="android:Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@android:color/transparent</item>
+        <item name="android:dropDownVerticalOffset">4dp</item>
+        <item name="android:dropDownHorizontalOffset">-85dp</item>
+        
+        <!-- just effective for sdk listpopupwindow, not custom listpopupwindow -->
+<!--         <item name="android:width">400dp</item>
+        <item name="android:dropDownWidth">300dp</item> -->
+    </style>
+
+    <style name="sola.DropDownListViewStyle" parent="@style/Widget.AppCompat.ListView.DropDown">
+<!--         <item name="android:listSelector">@drawable/list_selector</item> -->
+        <item name="android:divider">@drawable/sola_item_divider</item>
+<!--         <item name="android:dividerHeight">1px</item> -->
+    </style>
+    <!-- end of list popup window style -->
+
+</resources>

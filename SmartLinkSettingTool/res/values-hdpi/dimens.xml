@@ -1,0 +1,32 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="sola_large_font_size">40sp</dimen>
+    <dimen name="sola_large_middle_font_size">30sp</dimen>
+	<dimen name="sola_middle_font_size">20sp</dimen>
+	<dimen name="sola_small_font_size">16sp</dimen>
+	<dimen name="sola_small2_font_size">14sp</dimen>
+	<dimen name="sola_margin_left">11.02dp</dimen>
+	<dimen name="sola_margin_right">11.02dp</dimen>
+	<dimen name="sola_info_margin_left">17.18dp</dimen>
+	<dimen name="sola_button_height">44.1dp</dimen>
+	<dimen name="sola_title_height">40dp</dimen>
+	<dimen name="sola_section_title_height">44.00dp</dimen>
+	<dimen name="sola_textedit_height">36.75dp</dimen>
+	<dimen name="sola_radiobutton_height">30.87dp</dimen>
+	<dimen name="sola_radiobutton_width">176.39dp</dimen>
+	<dimen name="sola_wifi_item_height">33.07dp</dimen>
+	<dimen name="sola_wifi_item_status_icon_height">12.20dp</dimen>
+	<dimen name="sola_wifi_item_status_icon_width">12.54dp</dimen>
+	<dimen name="sola_wifi_item_select_ok_icon_width">11.78dp</dimen>
+	<dimen name="sola_wifi_item_select_ok_icon_height">8.83dp</dimen>
+	<dimen name="sola_navigation_icon_width">7.36dp</dimen>
+	<dimen name="sola_navigation_icon_height">12.27dp</dimen>
+	<dimen name="sola_toolbar_height">36.75dp</dimen>
+	<dimen name="sola_action_button_height">18.37dp</dimen>
+	<dimen name="sola_type_select_search_status_icon_width">66.15dp</dimen>
+	<dimen name="sola_type_select_search_status_icon_height">66.15dp</dimen>
+	<dimen name="sola_popmenu_item_height">29.40dp</dimen>
+	<dimen name="sola_popmenu_width">113.92dp</dimen>
+</resources>

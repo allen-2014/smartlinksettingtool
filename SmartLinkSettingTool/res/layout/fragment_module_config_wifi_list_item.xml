@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout_config_wifi_select"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sola_layout_bg"
+    android:orientation="horizontal" >
+    
+          <ImageView
+                    android:id="@+id/imageview_config_wifi_select_ok"
+                    android:layout_width="@dimen/sola_wifi_item_select_ok_icon_width"
+                    android:layout_height="@dimen/sola_wifi_item_select_ok_icon_height"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="@dimen/sola_margin_left"
+					android:visibility="invisible"
+                    android:background="@drawable/sola_select_ok_icon" />
+            
+            
+           <TextView
+		        android:id="@+id/textview_config_wifi"
+		        android:layout_width="260dp"
+		        android:layout_height="@dimen/sola_wifi_item_height"
+		        android:layout_marginLeft="@dimen/sola_margin_left"
+		        android:background="@android:color/transparent"
+		        android:gravity="center_vertical"
+		        android:textColor="@color/sola_section_title_color"
+		        android:text=""
+		        android:textSize="@dimen/sola_small_font_size" />
+           
+            <ImageView
+                	android:id="@+id/imageview_config_wifi_signal"
+                    android:layout_width="@dimen/sola_wifi_item_status_icon_width"
+                    android:layout_height="@dimen/sola_wifi_item_status_icon_height"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/sola_3_signal_icon" />
+    
+
+</LinearLayout>

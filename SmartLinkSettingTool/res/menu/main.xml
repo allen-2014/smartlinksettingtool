@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sola.smartlinksettingtool.MainActivity"
+     >
+
+<!--     <item --> 
+<!--         android:id="@+id/action_settings" -->
+<!--         android:orderInCategory="100" -->
+<!--         android:title="@string/action_settings" -->
+<!--         app:showAsAction="never"/> -->
+
+<!-- 	<item android:id="@+id/menu_item_bar_code" -->
+<!-- 	      android:icon="@drawable/sola_item_barcode_icon_35" -->
+<!-- 	      android:title="扫一扫" -->
+	      
+<!-- 	      android:showAsAction="never" /> -->
+	
+<!-- 	<item android:id="@+id/menu_item_timer" -->
+<!-- 	      android:icon="@drawable/sola_item_time_icon_35" -->
+<!-- 	      android:title="定时功能" -->
+	      
+
+	<item android:id="@+id/menu_item_plus"
+	      android:icon="@drawable/sola_toolbar_plus_icon_32"
+	      android:title=""
+	      android:showAsAction="always" />
+
+</menu>

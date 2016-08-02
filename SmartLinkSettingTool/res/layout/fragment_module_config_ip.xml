@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sola_window_background_color" >
+
+    <TextView
+        android:id="@+id/textview_config_section_ip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sola_section_title_height"
+        android:layout_marginLeft="@dimen/sola_margin_left"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:text="IP地址"
+        android:textColor="@color/sola_section_title_color"
+        android:textSize="@dimen/sola_small_font_size" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_ip_parameter_configuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_config_section_ip"
+        android:background="@drawable/sola_layout_bg"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12.26dp"
+            android:layout_marginLeft="@dimen/sola_margin_left"
+            android:layout_marginRight="@dimen/sola_margin_right"
+            android:layout_marginTop="12.26dp"
+            android:contentDescription="本地IP"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioButton_dhcp_setting"
+                style="@style/sola_left_tab"
+                android:checked="true"
+                android:text="DHCP" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/radioButton_static_setting"
+                style="@style/sola_right_tab"
+                android:text="静态" >
+            </RadioButton>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/sola_line_light_color"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sola_textedit_height"
+            android:layout_marginLeft="@dimen/sola_info_margin_left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".25"
+                android:gravity="center_vertical"
+                android:text="本地IP"
+                android:textSize="@dimen/sola_small_font_size" />
+
+            <EditText
+                android:id="@+id/editText_nearIP_setting"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".75"
+                android:background="@drawable/sola_edittext_none_edge_bg"
+                android:digits="0123456789."
+                android:gravity="center"
+                android:inputType="number|numberDecimal"
+                android:padding="5dp"
+                android:text="192.168.0.99"
+                android:textSize="@dimen/sola_small_font_size" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/sola_line_light_color"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sola_textedit_height"
+            android:layout_marginLeft="@dimen/sola_info_margin_left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".25"
+                android:gravity="center_vertical"
+                android:text="子网掩码"
+                android:textSize="@dimen/sola_small_font_size" />
+
+            <EditText
+                android:id="@+id/editText_subMask_setting"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".75"
+                android:background="@drawable/sola_edittext_none_edge_bg"
+                android:digits="0123456789."
+                android:gravity="center"
+                android:inputType="number|numberDecimal"
+                android:padding="5dp"
+                android:text="255.255.255.0"
+                android:textSize="@dimen/sola_small_font_size" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/sola_line_light_color"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sola_textedit_height"
+            android:layout_marginLeft="@dimen/sola_info_margin_left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".25"
+                android:gravity="center_vertical"
+                android:text="网关"
+                android:textSize="@dimen/sola_small_font_size" />
+
+            <EditText
+                android:id="@+id/editText_gateway_setting"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".75"
+                android:background="@drawable/sola_edittext_none_edge_bg"
+                android:digits="0123456789."
+                android:gravity="center"
+                android:inputType="number|numberDecimal"
+                android:padding="5dp"
+                android:text="192.168.0.1"
+                android:textSize="@dimen/sola_small_font_size" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/sola_line_light_color"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sola_textedit_height"
+            android:layout_marginLeft="@dimen/sola_info_margin_left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".25"
+                android:gravity="center_vertical"
+                android:text="DNS"
+                android:textSize="@dimen/sola_small_font_size" />
+
+            <EditText
+                android:id="@+id/editText_dns_setting"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".75"
+                android:background="@drawable/sola_edittext_none_edge_bg"
+                android:digits="0123456789."
+                android:gravity="center"
+                android:inputType="number|numberDecimal"
+                android:padding="5dp"
+                android:text="192.168.0.1"
+                android:textSize="@dimen/sola_small_font_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout_ip_parameter_configuration"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_ok_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sola_button_height"
+            android:layout_marginLeft="@dimen/sola_margin_left"
+            android:layout_marginRight="@dimen/sola_margin_right"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/sola_button_bg"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/sola_text_color"
+            android:textSize="@dimen/sola_small_font_size" />
+    </LinearLayout>
+
+</RelativeLayout>
